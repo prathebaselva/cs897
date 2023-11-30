@@ -15,60 +15,30 @@ Before you begin, make sure you have the following:
 
    ```bash
    git clone <main_repository_url>
-Replace <main_repository_url> with the URL of the main repository you want to clone. Example:
+2. **Replace <main_repository_url> with the URL of the main repository you want to clone. Example:**
+   ```bash
+   git clone https://github.com/yourusername/main-repo.git
+   
+3. **Navigate to the Cloned Repository:**
+   ```bash
+   cd main-repo
+   
+4. **Create a New Branch:**
+   - Create a new branch for your work. Replace <branch_name> with a meaningful name for your branch.
+     ```bash
+     git checkout -b <branch_name>
+   - Example:
+     ```bash
+     git checkout -b feature-branch
+5. **Push the New Branch to the Main Repository:**
+   ```bash
+   git push -u origin <branch_name>
+   - This sets up the branch remotely on the main repository.
 
-bash
-Copy code
-git clone https://github.com/yourusername/main-repo.git
-Navigate to the Cloned Repository:
+6. **Navigate to the Branch Directory:**
+   ```bash
+   cd ../<branch_name>
+   - Example:
+   ```bash
+   cd ../feature-branch
 
-Change into the directory of the cloned main repository:
-bash
-Copy code
-cd main-repo
-Create a New Branch:
-
-Create a new branch for your work. Replace <branch_name> with a meaningful name for your branch:
-bash
-Copy code
-git checkout -b <branch_name>
-Example:
-
-bash
-Copy code
-git checkout -b feature-branch
-Push the New Branch to the Main Repository (Optional):
-
-If you want to collaborate and share your branch with others, push it to the main repository:
-bash
-Copy code
-git push -u origin <branch_name>
-This sets up the branch remotely on the main repository.
-
-Navigate to the Branch Directory:
-
-Change into the directory of your branch:
-bash
-Copy code
-cd ../<branch_name>
-Example:
-
-bash
-Copy code
-cd ../feature-branch
-Start Working on Your Code:
-
-Now that your branch is set up, you can start working on your code.
-Make Changes and Commit:
-
-Make changes to your code, and when you're ready to save your work, use the following commands:
-bash
-Copy code
-git add .
-git commit -m "Your commit message"
-Push Changes to Remote Repository:
-
-Push your changes to the remote repository:
-bash
-Copy code
-git push origin <branch_name>
