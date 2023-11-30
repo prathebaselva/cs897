@@ -1,4 +1,4 @@
-1. ** Workin on your Feature Branch:**
+1. **Working on your Feature Branch:**
      ```bash
      git checkout <feature_branch_name>
   - Example:
