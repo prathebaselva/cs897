@@ -22,11 +22,11 @@ Before you begin, make sure you have the following:
    git init
    
 3. **Create a New Remote Repository:**
-   Create a new repository and copy the Remote Repository URL (remote_url) and remote_name (e.g., origin or main)
+   - Create a new repository and copy the Remote Repository URL (remote_url) and remote_name (e.g., origin or main)
    
 4. **Set remote repository in local machine:**
-  ```bash
-  git remote add <remote_name> <remote_url>
+   ```bash
+   git remote add <remote_name> <remote_url>
 
 5. **Confirm that the remote repository has been added:**
    ```bash
