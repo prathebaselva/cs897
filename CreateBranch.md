@@ -24,10 +24,10 @@ Before you begin, make sure you have the following:
    cd main-repo
    
 4. **Create a New Branch:**
-   Create a new branch for your work. Replace <branch_name> with a meaningful name for your branch.
+Create a new branch for your work. Replace <branch_name> with a meaningful name for your branch.
      ```bash
      git checkout -b <branch_name>
-   Example:
+Example:
      ```bash
      git checkout -b feature-branch
 5. **Push the New Branch to the Main Repository:**
