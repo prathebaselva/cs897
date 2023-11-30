@@ -38,7 +38,7 @@ Before you begin, make sure you have the following:
 6. **Navigate to the Branch Directory:**
    ```bash
    cd ../<branch_name>
- - Example:
+   Example:
    ```bash
    cd ../feature-branch
 
