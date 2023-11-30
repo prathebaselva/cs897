@@ -33,12 +33,12 @@ Before you begin, make sure you have the following:
 5. **Push the New Branch to the Main Repository:**
    ```bash
    git push -u origin <branch_name>
-   - This sets up the branch remotely on the main repository.
+ - This sets up the branch remotely on the main repository.
 
 6. **Navigate to the Branch Directory:**
    ```bash
    cd ../<branch_name>
-   - Example:
+ - Example:
    ```bash
    cd ../feature-branch
 
