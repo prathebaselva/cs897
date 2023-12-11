@@ -7,7 +7,10 @@
   ```git clone https://github.com/<username>/mnist_classification.git```
 - Step 3: Create branches
   - User 1 : create branch1 from remote repo
+    ```git checkout -b user1-branch```
   - User 2 : create branch2 from remote repo
+    ```git checkout -b user1-branch```
+  - ![alt text](branch.png)
 Step 2: Install dependencies
 Step 3: Create Neural Network Files - dataset, trainer, validator, main
 Step 4: Push Changes to Remote Repository
