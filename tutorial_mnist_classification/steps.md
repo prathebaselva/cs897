@@ -6,7 +6,7 @@
   - User1 and User2: Clone repo to local machine
   ```git clone https://github.com/<username>/mnist_classification.git```
   - ![alt text](clone.png)
-  - [Hear the command](https://github.com/prathebaselva/cs897/assets/38529810/4f1d2e77-79ba-4c0f-aa2f-721239c76151)
+  - [Hear the clone command](https://github.com/prathebaselva/cs897/assets/38529810/4f1d2e77-79ba-4c0f-aa2f-721239c76151)
 
 - Step 4: Create branches
   - User 1 : create branch1 from remote repo
@@ -14,6 +14,8 @@
   - User 2 : create branch2 from remote repo
     ```git checkout -b user1-branch```
   - ![alt text](branch.png)
+  - [Hear the branch command](https://github.com/prathebaselva/cs897/assets/38529810/de1b16f9-e778-461e-ac9c-83ebba3d2bcc)
+
 - Step 5_1: User1 - Create model file and commit to branch
   - Step a: vi model.py
 - Step 5_2: User1 - Push local branch to remote repo
