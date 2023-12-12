@@ -16,8 +16,24 @@
   - ![alt text](branch.png)
   - [Hear the branch command](https://github.com/prathebaselva/cs897/assets/38529810/de1b16f9-e778-461e-ac9c-83ebba3d2bcc)
 
-- Step 5_1: User1 - Create model file and commit to branch
-  - Step a: vi model.py
+** Steps to create the project files**
+- Step 5: Create to Commit
+  - Step 5.1: User1 - Create a Neural Network model file
+    - ``` vi model.py```
+  - Step 5.2: User1 - Add model file to repository
+    - ``` git add model.py ```
+  - Step 5.3: User1 - Check status (optional)
+    - ``` git status ```
+    - This should show that the model.py file as been added and the changes are yet to be committed
+  - Step 5.4: User1 - Commit gthe file
+    - ``` git commit -m "model file added" ```
+  - Step 5.5: User1 - Check status (optional)
+    - ``` git status ```
+      This should show that there is no other files to commit and the working branch is clean
+  - Step 5.6: User1 - Check log
+    - ``` git log ```
+    - This should show the log for 'add' and 'commit' with unique log id
+  - 
 - Step 5_2: User1 - Push local branch to remote repo
   - Step a: git push
 - Step 5_a: User 2 - Git pull from user1_branch
