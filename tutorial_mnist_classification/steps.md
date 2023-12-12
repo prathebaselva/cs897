@@ -44,8 +44,8 @@
   - A message pop-up showing that a particular branch has been added and the drop down option will now show two working branches
     - main
     - user1-branch
-    ![alt_text](only_user1_branch.png)
-    - Since the local branch 'user2-branch' has not added any file and pushed it to remote repository, that branch information is still not visible
+  - ![alt_text](only_user1_branch.png)
+  - Since the local branch 'user2-branch' has not added any file and pushed it to remote repository, that branch information is still not visible
   
 - Step 8: User 2 - Git pull from user1_branch
 - Step 5_b: User 2 - Change batch size in model.py
