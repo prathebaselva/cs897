@@ -7,6 +7,8 @@
   ```git clone https://github.com/<username>/mnist_classification.git```
   - ![alt text](clone.png)
   - [![Hear the audio]](clone_video.m4v)
+  - [clone1_webm.webm](https://github.com/prathebaselva/cs897/assets/38529810/4f1d2e77-79ba-4c0f-aa2f-721239c76151)
+
 - Step 4: Create branches
   - User 1 : create branch1 from remote repo
     ```git checkout -b user1-branch```
