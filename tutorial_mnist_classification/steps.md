@@ -35,7 +35,8 @@
     - This should show the log for 'add' and 'commit' with unique log id
   - ![alt_text](user1_add_commit_model.png)
   ** Note that user2-branch has no file and is clean **
-- Step 5_2: User1 - Push local branch to remote repo
+- Step 6: User1 - Push from local branch to remote repository
+  ``` git push origin user1-branch ```
   - Step a: git push
 - Step 5_a: User 2 - Git pull from user1_branch
 - Step 5_b: User 2 - Change batch size in model.py
