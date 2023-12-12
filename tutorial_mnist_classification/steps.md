@@ -6,6 +6,7 @@
   - User1 and User2: Clone repo to local machine
   ```git clone https://github.com/<username>/mnist_classification.git```
   - ![alt text](clone.png)
+  - ![alt text](clone.mp3)
 - Step 4: Create branches
   - User 1 : create branch1 from remote repo
     ```git checkout -b user1-branch```
