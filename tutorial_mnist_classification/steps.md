@@ -33,7 +33,8 @@
   - Step 5.6: User1 - Check log
     - ``` git log ```
     - This should show the log for 'add' and 'commit' with unique log id
-  - [![alt_text](user1_add_commit_model.png)
+  - ![alt_text](user1_add_commit_model.png)
+  ** Note that user2-branch has no file and is clean **
 - Step 5_2: User1 - Push local branch to remote repo
   - Step a: git push
 - Step 5_a: User 2 - Git pull from user1_branch
