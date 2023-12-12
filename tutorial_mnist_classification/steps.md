@@ -50,8 +50,28 @@
 - Step 8: User 2 - Git pull from user1_branch
   - ``` git pull origin user1-branch ```
   - ![alt_text](user2_pull_branch1.png)
-- Step 5_b: User 2 - Change batch size in model.py
-- Step 5_c: User 2 - Push local change to remote branch
-- Step 6: User 1 - Pull from local branch
-- Step 7: User 1 - Resolve conflict 
-Step 4: Push Changes to Remote Repository
+
+** Reverting commits **
+- Step 9: User1 - Realizes the model.py file needs one more import and decides to revert the commit made to remote repository
+  - The git revert command is a safer option for undoing changes on shared branches because it creates a new commit that undoes the changes without altering the commit history. If you want to completely remove the commit and its history (which is generally not recommended for shared branches), you might consider using git reset and force-pushing. However, be cautious with force-pushing as it rewrites the commit history and can cause issues for collaborators.
+  - Step 9.1: check git log
+    - ``` git log ```
+    - ![alt_text](user1_push_remote.png)
+    - There are two commit-hash, one for git add and one belong to commit.
+  - Step 9.2: Copy the commit-hash,
+    - here ```5d32c2efd2981b8a35a57d965160960fe246f21b```
+  - Step 9.3: Start git revert of the commit
+    - ``` git revert 5d32c2efd2981b8a35a57d965160960fe246f21b ```
+    - ``` git revert d1607577a29a6e8390d0e70ab2eebde3a7346593 ```
+    - This will open up a ext editor (in our case vi editor)
+    - ![alt_text](user1_push_remote.png)
+    - Add any additional command you want to and save the file (w!)
+  - Step 9.4: Git add the changes
+    - ``` git add . ```
+  - Step 9.5: Git commit the changes
+    - ``` git commit -m "reverting commit by 5d32c2efd2981b8a35a57d965160960fe246f21b and d1607577a29a6e8390d0e70ab2eebde3a7346593" ```
+  - Step 9.6: Git push the changes to remote
+    - ``` git push origin user1-branch ```
+    - If you open the remote repository, you will find that no files exists
+    - ![alt test](revert_user1_nofile_anymore.png)
+  
