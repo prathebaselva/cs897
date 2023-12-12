@@ -48,6 +48,8 @@
   - Since the local branch 'user2-branch' has not added any file and pushed it to remote repository, that branch information is still not visible
   
 - Step 8: User 2 - Git pull from user1_branch
+  - ``` git pull origin user1-branch ```
+  - ![alt_text](user2_pull_branch1.png)
 - Step 5_b: User 2 - Change batch size in model.py
 - Step 5_c: User 2 - Push local change to remote branch
 - Step 6: User 1 - Pull from local branch
