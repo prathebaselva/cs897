@@ -37,8 +37,17 @@
   ** Note that user2-branch has no file and is clean **
 - Step 6: User1 - Push from local branch to remote repository
   ``` git push origin user1-branch ```
-  - Step a: git push
-- Step 5_a: User 2 - Git pull from user1_branch
+  - ![alt_text](user1_push_remote.png)
+- Step 7: Verify push
+  - Open remote repository and you will see something like this
+  - ![alt_text](remote_repo_user1_branch.png)
+  - A message pop-up showing that a particular branch has been added and the drop down option will now show two working branches
+    - main
+    - user1-branch
+    ![alt_text](only_user1_branch.png)
+    - Since the local branch 'user2-branch' has not added any file and pushed it to remote repository, that branch information is still not visible
+  
+- Step 8: User 2 - Git pull from user1_branch
 - Step 5_b: User 2 - Change batch size in model.py
 - Step 5_c: User 2 - Push local change to remote branch
 - Step 6: User 1 - Pull from local branch
