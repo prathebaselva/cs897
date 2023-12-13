@@ -123,8 +123,6 @@
   - 
   __Step 11.5: User2: Fix the merge conflict__
     - ``` vi model.py ```
-    - ![Watch the video](https://github.com/prathebaselva/cs897/assets/38529810/24cee072-2f97-4577-91e3-803941538b5e)
-    - ![Watch the video](git_merge.mov)
-  
-
+    - [Watch the video](https://github.com/prathebaselva/cs897/assets/38529810/24cee072-2f97-4577-91e3-803941538b5e)
+   
   
