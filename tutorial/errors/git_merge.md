@@ -44,15 +44,16 @@
 
   **Solution:**
    - Use git pull to fetch changes and merge.
-      - git pull
+        git pull
     - Alternatively, merge using git merge --no-ff.
-      - git merge --no-ff
+        git merge --no-ff
        
 ## 7.Error: Refusing to Merge Unrelated Histories:
   **Cause: Attempting to merge branches with no common ancestor.**
 
   **Solution:**
-      git merge --allow-unrelated-histories
+     git merge --allow-unrelated-histories
+  
   to force the merge if necessary.
 
 ## 8.Error: Permission Denied (publickey):
