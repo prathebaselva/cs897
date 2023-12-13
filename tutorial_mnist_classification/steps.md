@@ -58,22 +58,28 @@
 # Reverting commits
  **Step 9: User1 - Realizes the model.py file needs one more import and decides to revert the commit made to remote repository**
    - The git revert command is a safer option for undoing changes on shared branches because it creates a new commit that undoes the changes without altering the commit history. If you want to completely remove the commit and its history (which is generally not recommended for shared branches), you might consider using git reset and force-pushing. However, be cautious with force-pushing as it rewrites the commit history and can cause issues for collaborators.
+     
   __Step 9.1: check git log__
     - ``` git log ```
     - ![alt_text](user1_push_remote.png)
     - There are two commit-hash, one for git add and one belong to commit.
+    
   __Step 9.2: Copy the commit-hash__
     - here ```5d32c2efd2981b8a35a57d965160960fe246f21b```
+    
   __Step 9.3: Start git revert of the commit__
     - ``` git revert 5d32c2efd2981b8a35a57d965160960fe246f21b ```
     - ``` git revert d1607577a29a6e8390d0e70ab2eebde3a7346593 ```
     - This will open up a ext editor (in our case vi editor)
     - ![alt_text](user1_push_remote.png)
     - Add any additional command you want to and save the file (w!)
+    
   __Step 9.4: Git add the changes__
     - ``` git add . ```
+    
   __Step 9.5: Git commit the changes__
     - ``` git commit -m "reverting commit by 5d32c2efd2981b8a35a57d965160960fe246f21b and d1607577a29a6e8390d0e70ab2eebde3a7346593" ```
+    
   __Step 9.6: Git push the changes to remote__
     - ``` git push origin user1-branch ```
     - If you open the remote repository, you will find that no files exists
@@ -84,18 +90,36 @@
   __Step 10.1: modify__
     - ```vi model.py```
     - ![alt_text](change_same_line_main.png)
+    
   __Step 10.2: User1: Push to remote branch__
     - ```git push origin user1-branch ```
+    
   __Step 10.3: User2: Push to remote branch__
     - ```git push origin user2-branch ```
-  - ![alt_text](user2_branch_main_repo.png)
-  - You can see that the remote repository now has 2 branches along with main.
+    - ![alt_text](user2_branch_main_repo.png)
+    - You can see that the remote repository now has 2 branches along with main.
+    
   __Step 10.4: User2: Add train, test and main file__
     - ``` git add *.py ```
     - ``` git commit -m "train, test and main file added ```
     - ``` git push origin user2-branch ```
+    
 # Push changes from branch to main
   **Now time to push changes from both repository to main**
+  __Step 11.1: User1: checkout main__
+    - ``` git checkout main ```
+  __Step 11.2: User1: git pull all changes__
+    - ``` git pull ```
+  __Step 11.3: User2: checkout main__
+    - ``` git checkout main ```
+  __Step 11.4: User2: git pull all changes__
+    - ``` git pull ```
+    - We will encounter merge conflict at this time, since in step 10.1 to 10.3 we modified the same file line and pushed it to respective branches. Merge conflict will occur when two or more users edit the same file in same branch. Here since both users have checked out main branch, the conflict occurs.
+  - ![alt_text](merge_conflict_main.png)
+  - ![alt_text](merge_conflict2.png)
+  __Step 11.5: User2: Fix the merge conflict__
+    - ``` vi model.py ```
+    - ![Watch the video](git_merge.mov)
   
 
   
