@@ -46,7 +46,6 @@
    - Use git pull to fetch changes and merge.
      
         git pull
-     
     - Alternatively, merge using git merge --no-ff.
      
         git merge --no-ff
