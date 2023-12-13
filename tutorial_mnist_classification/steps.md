@@ -1,21 +1,21 @@
 # Set up remote and local repository
-**Step 1: Set Up the Project**
-  __User1 : Create bare remote repository__
-  - ![alt text](bare_remote_repo.png)
-**Step 2: Open terminal and cd to location to clone the remote github repository**
-**Step 3: Clone to local machine**
-  __User1 and User2: Clone repo to local machine__
-  ```git clone https://github.com/<username>/mnist_classification.git```
-  - ![alt text](clone.png)
-  - [Hear the clone command](https://github.com/prathebaselva/cs897/assets/38529810/4f1d2e77-79ba-4c0f-aa2f-721239c76151)
-
-**Step 4: Create branches**
-  __User 1 : create branch1 from remote repo__
-    ```git checkout -b user1-branch```
-  __User 2 : create branch2 from remote repo__
-    ```git checkout -b user1-branch```
-  - ![alt text](branch.png)
-  - [Hear the branch command](https://github.com/prathebaselva/cs897/assets/38529810/de1b16f9-e778-461e-ac9c-83ebba3d2bcc)
+  **Step 1: Set Up the Project**
+    __User1 : Create bare remote repository__
+    - ![alt text](bare_remote_repo.png)
+  **Step 2: Open terminal and cd to location to clone the remote github repository**
+  **Step 3: Clone to local machine**
+    __User1 and User2: Clone repo to local machine__
+    ```git clone https://github.com/<username>/mnist_classification.git```
+    - ![alt text](clone.png)
+    - [Hear the clone command](https://github.com/prathebaselva/cs897/assets/38529810/4f1d2e77-79ba-4c0f-aa2f-721239c76151)
+  
+  **Step 4: Create branches**
+    __User 1 : create branch1 from remote repo__
+      ```git checkout -b user1-branch```
+    __User 2 : create branch2 from remote repo__
+      ```git checkout -b user1-branch```
+    - ![alt text](branch.png)
+    - [Hear the branch command](https://github.com/prathebaselva/cs897/assets/38529810/de1b16f9-e778-461e-ac9c-83ebba3d2bcc)
 
 # Steps to create the project files
   **Step 5: Create to Commit**
