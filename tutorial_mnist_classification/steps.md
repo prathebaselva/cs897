@@ -13,6 +13,7 @@
   **Step 4: Create branches**
     __User 1 : create branch1 from remote repo__
       ```git checkout -b user1-branch```
+      
     __User 2 : create branch2 from remote repo__
       ```git checkout -b user1-branch```
     - ![alt text](branch.png)
@@ -22,19 +23,25 @@
   **Step 5: Create to Commit**
    __Step 5.1: User1 - Create a Neural Network model file__
      - ``` vi model.py```
+     
    __Step 5.2: User1 - Add model file to repository__
      - ``` git add model.py ```
+     
    __Step 5.3: User1 - Check status (optional)__
      - ``` git status ```
      - This should show that the model.py file as been added and the changes are yet to be committed
+     
    __Step 5.4: User1 - Commit the file__
      - ``` git commit -m "model file added" ```
+     
    __Step 5.5: User1 - Check status (optional)__
      - ``` git status ```
        This should show that there is no other files to commit and the working branch is clean
+       
    __Step 5.6: User1 - Check log__
      - ``` git log ```
      - This should show the log for 'add' and 'commit' with unique log id
+     
    - ![alt_text](user1_add_commit_model.png)
    **__Note that user2-branch has no file and is clean__**
      
@@ -42,6 +49,7 @@
   __Step 6.1: User1 - Push from local branch to remote branch__
    ``` git push origin user1-branch ```
    - ![alt_text](user1_push_remote.png)
+     
   __Step 6.2: Verify push__
    - Open remote repository and you will see something like this
    - ![alt_text](remote_repo_user1_branch.png)
