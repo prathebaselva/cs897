@@ -35,6 +35,7 @@
   **Cause: You have changes in your working directory that are not yet committed or stashed.**
   
   **Solution:**
+  
     git stash
     git pull --rebase origin <branch_name>
     git stash pop
@@ -57,5 +58,5 @@
   **Cause: Authentication issues, usually when trying to access a private repository.**
   
   **Solution:**
-    - Ensure your credentials (username/password or token) are correct.
-    - Check if your account has the necessary permissions.
+   - Ensure your credentials (username/password or token) are correct.
+   - Check if your account has the necessary permissions.
