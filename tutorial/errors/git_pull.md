@@ -11,9 +11,9 @@
   
   **Solution: Either commit your changes, stash them, or discard them before pulling:**
   
-    ```git stash     # Stash local changes ```
-    ```git pull origin <branch_name> ```
-    ```git stash pop    # Apply stashed changes back ```
+    git stash     # Stash local changes
+    git pull origin <branch_name>
+    git stash pop    # Apply stashed changes back
     
 Error: "Please commit your changes or stash them before you merge"
 
