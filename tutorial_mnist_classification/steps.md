@@ -112,7 +112,7 @@
     - ``` git commit -m "train, test and main file added ```
     - ``` git push origin user2-branch ```
     
-# Push changes from branch to main
+# Push changes from branch to main and resolve merge conflict
   **Now time to push changes from both repository to main**
   __Step 11.1: User1: checkout main__
     - ``` git checkout main ```
@@ -135,9 +135,7 @@
 
   __Step 11.6: User2: Git add, commit and push__
     - ``` git add model.py ```
-    
     - ``` git commit -m "merge conflict resolved" ```
-    
     - ``` git push ```
     
    
