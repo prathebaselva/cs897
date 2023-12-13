@@ -45,11 +45,11 @@
   **Solution:**
    - Use git pull to fetch changes and merge.
      
-        git pull
+         git pull
      
    - Alternatively, merge using git merge --no-ff.
      
-        git merge --no-ff
+         git merge --no-ff
        
 ## 7.Error: Refusing to Merge Unrelated Histories:
   **Cause: Attempting to merge branches with no common ancestor.**
