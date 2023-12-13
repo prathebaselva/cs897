@@ -79,5 +79,23 @@
     - If you open the remote repository, you will find that no files exists
     - ![alt test](revert_user1_nofile_anymore.png)
 
-# Push to remote 'main' 
+# Push both branches to remote
+  **Edit model file in both user1-branch and user2-branch and push**
+  __Step 10.1: modify__
+    - ```vi model.py```
+    - ![alt_text](change_same_line_main.png)
+  __Step 10.2: User1: Push to remote branch__
+    - ```git push origin user1-branch ```
+  __Step 10.3: User2: Push to remote branch__
+    - ```git push origin user2-branch ```
+  - ![alt_text](user2_branch_main_repo.png)
+  - You can see that the remote repository now has 2 branches along with main.
+  __Step 10.4: User2: Add train, test and main file__
+    - ``` git add *.py ```
+    - ``` git commit -m "train, test and main file added ```
+    - ``` git push origin user2-branch ```
+# Push changes from branch to main
+  **Now time to push changes from both repository to main**
+  
+
   
