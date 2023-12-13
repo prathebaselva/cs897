@@ -1,22 +1,23 @@
-- Step 1: Set Up the Project
-  - User1 : Create bare remote repository
+# Set up remote and local repository
+## Step 1: Set Up the Project
+  **User1 : Create bare remote repository**
   - ![alt text](bare_remote_repo.png)
-- Step 2: Open terminal and cd to location to clone the remote github repository
-- Step 3: Clone to local machine
-  - User1 and User2: Clone repo to local machine
+# Step 2: Open terminal and cd to location to clone the remote github repository
+# Step 3: Clone to local machine
+  ## User1 and User2: Clone repo to local machine
   ```git clone https://github.com/<username>/mnist_classification.git```
   - ![alt text](clone.png)
   - [Hear the clone command](https://github.com/prathebaselva/cs897/assets/38529810/4f1d2e77-79ba-4c0f-aa2f-721239c76151)
 
-- Step 4: Create branches
-  - User 1 : create branch1 from remote repo
+# Step 4: Create branches
+  ## User 1 : create branch1 from remote repo
     ```git checkout -b user1-branch```
-  - User 2 : create branch2 from remote repo
+  ## User 2 : create branch2 from remote repo
     ```git checkout -b user1-branch```
   - ![alt text](branch.png)
   - [Hear the branch command](https://github.com/prathebaselva/cs897/assets/38529810/de1b16f9-e778-461e-ac9c-83ebba3d2bcc)
 
-** Steps to create the project files**
+# Steps to create the project files**
 - Step 5: Create to Commit
   - Step 5.1: User1 - Create a Neural Network model file
     - ``` vi model.py```
