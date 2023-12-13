@@ -35,10 +35,9 @@
   **Cause: You have changes in your working directory that are not yet committed or stashed.**
   
   **Solution:**
-  
-    git stash
-    git pull --rebase origin <branch_name>
-    git stash pop
+     git stash
+     git pull --rebase origin <branch_name>
+     git stash pop
     
 ## 6.Error: "Permission denied (publickey)." or "Could not read from remote repository."
   **Cause: Issues with SSH key setup or repository access.**
