@@ -1,23 +1,42 @@
-Commit Not Found:
+## 1.Error: Commit Not Found:
+  **Cause: The specified commit hash or reference does not exist in the repository.**
+  **Solution:**
+    - Verify the correctness of the commit hash or reference using git log to check the commit history.
 
-Cause: The specified commit hash or reference does not exist in the repository.
-Solution: Verify the correctness of the commit hash or reference. Use git log to check the commit history.
-Already Reverted:
+      git log
+      
+## 2.Error: Already Reverted:
+  **Cause: Attempting to revert a commit that has already been reverted.**
+  **Solution:**
+    - Check the commit history using git log to confirm if the commit has already been reverted.
 
-Cause: Attempting to revert a commit that has already been reverted.
-Solution: Check the commit history using git log to confirm if the commit has already been reverted.
-You are in the Middle of a Revert:
+## 3.Error: You are in the Middle of a Revert:
+  **Cause: Attempting to perform another operation while a previous revert is in progress.**
+  **Solution:**
+    - Complete or abort the current revert before starting a new operation.
+      
+      git revert --abort
+      
+## 4.Error:Uncommitted Changes:
+  **Cause: There are uncommitted changes in the working directory.**
+  **Solution:**
+    - Commit, stash, or discard local changes before attempting to revert.
 
-Cause: Attempting to perform another operation while a previous revert is in progress.
-Solution: Complete or abort the current revert before starting a new operation. Use git revert --abort if needed.
-Uncommitted Changes:
+      git commit -m "description of current changes"
+      git stash
+    
+## 5.Error: Conflict in <file>:
+  **Cause: There is a merge conflict during the revert process.**
+  **Solution:**
+    - Manually resolve conflicts in the affected file(s).
+    - Use git status to identify conflicted files.
+    - After resolving, mark them as resolved with git add <file>.
+    - Continue the revert with git revert --continue.
 
-Cause: There are uncommitted changes in the working directory.
-Solution: Commit, stash, or discard local changes before attempting to revert.
-Conflict in <file>:
-
-Cause: There is a merge conflict during the revert process.
-Solution: Manually resolve conflicts in the affected file(s). Use git status to identify conflicted files. After resolving, mark them as resolved with git add <file> and continue the revert with git revert --continue.
+      git status
+      git add <file>
+      git revert --continue
+      
 Refusing to Merge Unrelated Histories:
 
 Cause: Attempting to revert a commit that is not part of the branch's history.
