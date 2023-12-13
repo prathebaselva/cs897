@@ -3,6 +3,7 @@
   **Solution:**
     - Manually resolve conflicts. Open conflicted files, edit them to resolve conflicts.
     - add changes (git add <file>), and then commit (git merge --continue).
+    
         ```git add <file> ```
         ```git merge --continue ```
 
