@@ -4,7 +4,7 @@
     ``` git pull origin <branch_name> ```
     - This command fetches the changes and merges them into your local branch.
     
-## 1. Error: "Your local changes to the following files would be overwritten by merge"
+## 2. Error: "Your local changes to the following files would be overwritten by merge"
   **Cause: You have uncommitted changes in your local working directory that conflict with the changes to be pulled.**
   **Solution: Either commit your changes, stash them, or discard them before pulling:**
     ```git stash     # Stash local changes ```
