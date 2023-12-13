@@ -1,20 +1,16 @@
-Error: "Updates were rejected because the tip of your current branch is behind"
-
-Cause: This occurs when your local branch is not up-to-date with the remote branch, and someone else has pushed changes in the meantime.
-Solution:
-bash
-Copy code
-git pull origin <branch_name>
-This command fetches the changes and merges them into your local branch.
-Error: "Your local changes to the following files would be overwritten by merge"
-
-Cause: You have uncommitted changes in your local working directory that conflict with the changes to be pulled.
-Solution: Either commit your changes, stash them, or discard them before pulling:
-bash
-Copy code
-git stash    # Stash local changes
-git pull origin <branch_name>
-git stash pop    # Apply stashed changes back
+## 1.Error: "Updates were rejected because the tip of your current branch is behind"
+  **Cause: This occurs when your local branch is not up-to-date with the remote branch, and someone else has pushed changes in the meantime.**
+  **Solution:**
+    ``` git pull origin <branch_name> ```
+    - This command fetches the changes and merges them into your local branch.
+    
+## 1. Error: "Your local changes to the following files would be overwritten by merge"
+  **Cause: You have uncommitted changes in your local working directory that conflict with the changes to be pulled.**
+  **Solution: Either commit your changes, stash them, or discard them before pulling:**
+    ```git stash     # Stash local changes ```
+    ```git pull origin <branch_name> ```
+    ```git stash pop    # Apply stashed changes back ```
+    
 Error: "Please commit your changes or stash them before you merge"
 
 Cause: Similar to the previous error, but Git explicitly asks you to commit or stash your changes.
