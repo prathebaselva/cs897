@@ -131,12 +131,12 @@
     
   __Step 11.5: User2: Fix the merge conflict__
     - ``` vi model.py ```
-    - ![watch the video](https://github.com/prathebaselva/cs897/assets/38529810/24cee072-2f97-4577-91e3-803941538b5e)
+    - [watch the video](https://github.com/prathebaselva/cs897/assets/38529810/24cee072-2f97-4577-91e3-803941538b5e)
 
   __Step 11.6: User2: Git add, commit and push__
-    - ``` git add model.py ```
-    - ``` git commit -m "merge conflict resolved" ```
-    - ``` git push ```
+    - ``` git add model.py
+          git commit -m "merge conflict resolved
+          git push ```
     
    
   
