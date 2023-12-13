@@ -123,6 +123,7 @@
     
   __Step 11.5: User2: Fix the merge conflict__
     - ``` vi model.py ```
-    - [![Watch the video](merge_conflict2.png)](https://github.com/prathebaselva/cs897/assets/38529810/24cee072-2f97-4577-91e3-803941538b5e)
+    - [<img src="merge_conflict2.png" width="50%">](https://github.com/prathebaselva/cs897/assets/38529810/24cee072-2f97-4577-91e3-803941538b5e)
+    
    
   
