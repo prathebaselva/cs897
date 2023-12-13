@@ -108,17 +108,22 @@
   **Now time to push changes from both repository to main**
   __Step 11.1: User1: checkout main__
     - ``` git checkout main ```
+    
   __Step 11.2: User1: git pull all changes__
     - ``` git pull ```
+    
   __Step 11.3: User2: checkout main__
     - ``` git checkout main ```
+    
   __Step 11.4: User2: git pull all changes__
     - ``` git pull ```
     - We will encounter merge conflict at this time, since in step 10.1 to 10.3 we modified the same file line and pushed it to respective branches. Merge conflict will occur when two or more users edit the same file in same branch. Here since both users have checked out main branch, the conflict occurs.
   - ![alt_text](merge_conflict_main.png)
   - ![alt_text](merge_conflict2.png)
+  - 
   __Step 11.5: User2: Fix the merge conflict__
     - ``` vi model.py ```
+    - ![Watch the video](https://github.com/prathebaselva/cs897/assets/38529810/24cee072-2f97-4577-91e3-803941538b5e)
     - ![Watch the video](git_merge.mov)
   
 
